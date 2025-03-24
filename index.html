@@ -5,54 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        .container{
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            transition: opacity 0.8s ease-out;
+        }
+        .fade-out{
+            opacity: 0;
+        }
+        .container {
             background-color: blueviolet;
-            
-            min-width: 45vh;
-            border: 1px solid rgb(255, 255, 255);
-            
+            max-width: 90%;
+            margin: 10% auto;
+            padding: 20px;
             text-align: center;
-            margin: 346px 0px;
-            padding: 40px;
-            
+            border: 1px solid #fff;
             border-radius: 19px;
-            box-shadow: 5px 20px 30px;
-            
-                        
-            
+            box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.5);
         }
-        h1{
+        h1 {
             color: aliceblue;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
         }
-        .tx{
-         background-color: rgb(0, 0, 0);
-         text-align: center;
-         color: aliceblue;
-         height: 23px;
-         font-family:Verdana, Geneva, Tahoma, sans-serif;
-         font-size: 13px;
+        .tx {
+            background-color: #000;
+            text-align: center;
+            color: aliceblue;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 13px;
         }
-
-        #btn{
+        #btn {
             height: 50px;
-            width: 170px;
+            width: 70%;
             border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
-        #btn:active{
+        #btn:hover {
+        transform: scale(1.1); 
+        background-color: darkviolet; /* Change the background color */
+        color: white;
+        box-shadow: 0px 2px 15px #000000;
+    }
+        #btn:active {
             background-color: black;
             color: white;
+            transform: scale(0.95);
         }
     </style>
+    <script>
+        function bton() {
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+            window.location.href = "new.html";
+        },700);
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-    <h1>welcome to the website</h1>
-    <button id="btn">CLICK HERE</button>
-    <p>to continue.<br></p>
+        <h1>Welcome to the Website</h1>
+        <button id="btn" onclick="bton()">CLICK HERE</button>
+        <p>To continue.<br></p>
     </div>
-    <div class="tx"><p>Don't worry it's made by Biswarup</Don></p></div>
-    
+    <div class="tx">
+        <p>Don't worry, it's made by Biswarup</p>
+    </div>
 </body>
 </html>
