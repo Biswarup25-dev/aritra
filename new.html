@@ -11,9 +11,10 @@
         height:100vh;
         align-items: center;
         justify-content: center;
-        background-color: #f07167;
+        background-color: #641b16;
         overflow: hidden;
         transition: opacity 0.8s ease-in;
+       
         }
 
         #birthday-cake {
@@ -37,7 +38,7 @@
 .cake {
   position: absolute;
   background-color: #ddb892;
-  width: 350px;
+  width: 243px;
   height:130px;
   transform: translate(-50%,-60%);
 }
@@ -117,7 +118,7 @@
   height: 80px;
   background-color: #0081a7;
   top:-160px;
-  left:-20px;
+  left: 40px;
   box-shadow: 50px 20px #0081a7, -50px 20px #0081a7;
 }
 
@@ -241,8 +242,8 @@
 .text2 {
   font-size: 25px;
   width: 300px;
-  top:105px;
-  left:-140px;
+  top: 134px;
+  left:-87px;
 
 }
 .back {
@@ -285,16 +286,20 @@
 }
 .im{
     
-            text-align: right;
+            text-align: left;
             color: aliceblue;
             padding: 10px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 13px;
             position: fixed; 
             bottom: 0;
-            width: 100%; 
-            left: 0;
+            width: 10%; 
+            right: 60px;
+            
+            
 }
+
+
 
 
     </style>
@@ -315,7 +320,7 @@ $(document).ready(function() {
 <body onload="document.body.style.opacity='1'">
     
     
-
+<div class="cen">
     <div id="birthday-cake">
         <div class="cake">
           <div class="middle"></div>
@@ -339,6 +344,7 @@ $(document).ready(function() {
     <img src="https://media.tenor.com/ZN__iGxUZBcAAAAj/cat-guitar.gif">
     </div>
       <audio id="bgM" src="happy-birthday-155461.mp3"></audio>
+    </div>
       </body>
       
 </html>
